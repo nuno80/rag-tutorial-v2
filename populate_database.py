@@ -31,7 +31,7 @@ def main():
 def load_documents():
     document_loader = PyPDFDirectoryLoader(DATA_PATH)
     return document_loader.load()
-
+    #https://python.langchain.com/docs/modules/data_connection/document_loaders/ for other loader from langchain
 
 def split_documents(documents: list[Document]):
     text_splitter = RecursiveCharacterTextSplitter(
